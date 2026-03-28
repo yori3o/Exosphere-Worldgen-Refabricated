@@ -1,0 +1,16 @@
+{
+  "config": {
+    "features": [
+      {
+        "feature": "exosphere:andesite_standalone_cliffs",
+        "chance": 0.82
+      },
+      {
+        "feature": "exosphere:tuff_standalone_cliffs",
+        "chance": 0.18
+      }
+    ],
+    "default": "exosphere:andesite_standalone_cliffs"
+  },
+  "type": "minecraft:random_selector"
+}

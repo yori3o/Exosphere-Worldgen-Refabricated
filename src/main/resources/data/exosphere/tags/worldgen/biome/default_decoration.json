@@ -1,0 +1,17 @@
+{
+	"values": [
+        "#c:is_stony_shores",
+        "#c:is_beach",
+        "#c:is_aquatic",
+        "#c:is_forest",
+        "#c:is_savanna",
+        "#c:is_hill",
+        "#c:is_plains",
+        "#c:is_jungle",
+		"minecraft:old_growth_spruce_taiga",
+        "minecraft:deep_frozen_ocean",
+        "minecraft:frozen_ocean",
+        "minecraft:lush_caves",
+        "#c:is_dense_vegetation/overworld"
+	]
+}

@@ -1,0 +1,16 @@
+{
+  "config": {
+    "features": [
+      {
+        "feature": "exosphere:tilted_tall_mushroom",
+        "chance": 0.67
+      },
+      {
+        "feature": "exosphere:huge_brown_mushroom",
+        "chance": 0.33
+      }
+    ],
+    "default": "exosphere:tilted_tall_mushroom"
+  },
+  "type": "minecraft:random_selector"
+}

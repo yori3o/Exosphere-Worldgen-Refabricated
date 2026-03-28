@@ -1,0 +1,16 @@
+{
+  "config": {
+    "features": [
+      {
+        "feature": "exosphere:dark_oak_bush",
+        "chance": 0.67
+      },
+      {
+        "feature": "exosphere:rooted_bush",
+        "chance": 0.03
+      }
+    ],
+    "default": "exosphere:dark_oak_bush"
+  },
+  "type": "minecraft:random_selector"
+}

@@ -1,0 +1,24 @@
+{
+  "config": {
+    "features": [
+      {
+        "feature": "exosphere:twisted_oak",
+        "chance": 0.01
+      },
+      {
+        "feature": "exosphere:multi_swamp",
+        "chance": 0.25
+      },
+      {
+        "feature": "exosphere:mega_swamp_big",
+        "chance": 0.11
+      },
+      {
+        "feature": "exosphere:mega_swamp_small",
+        "chance": 0.6
+      }
+    ],
+    "default": "exosphere:multi_acacia"
+  },
+  "type": "minecraft:random_selector"
+}

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "features": [
+      {
+        "chance": 0.075,
+        "feature": "exosphere:ancient_flower_patch"
+      },
+      {
+        "chance": 0.25,
+        "feature": "exosphere:tulip_flower_patch"
+      },
+      {
+        "chance": 0.175,
+        "feature": "exosphere:lily_flower_patch"
+      },
+      {
+        "chance": 0.34,
+        "feature": "exosphere:grassy_patch"
+      },
+      {
+        "chance": 0.16,
+        "feature": "exosphere:tall_flower_patch"
+      }
+    ],
+    "default": "exosphere:grassy_patch"
+  }
+}

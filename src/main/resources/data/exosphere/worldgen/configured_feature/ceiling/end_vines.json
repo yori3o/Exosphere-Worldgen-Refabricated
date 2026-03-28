@@ -1,0 +1,53 @@
+{
+  "type": "minecraft:block_column",
+  "config": {
+    "allowed_placement": {
+      "type": "minecraft:matching_blocks",
+      "blocks": "minecraft:air"
+    },
+    "direction": "down",
+    "layers": [
+      {
+        "height": {
+          "type": "minecraft:weighted_list",
+          "distribution": [
+            {
+              "data": {
+                "type": "minecraft:uniform",
+                "max_inclusive": 19,
+                "min_inclusive": 3
+              },
+              "weight": 1
+            },
+            {
+              "data": {
+                "type": "minecraft:uniform",
+                "max_inclusive": 9,
+                "min_inclusive": 3
+              },
+              "weight": 2
+            },
+            {
+              "data": {
+                "type": "minecraft:uniform",
+                "max_inclusive": 3,
+                "min_inclusive": 1
+              },
+              "weight": 4
+            }
+          ]
+        },
+        "provider": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "minecraft:end_rod",
+            "Properties": {
+              "facing": "down"
+            }
+          }
+        }
+      }
+    ],
+    "prioritize_tip": true
+  }
+}
