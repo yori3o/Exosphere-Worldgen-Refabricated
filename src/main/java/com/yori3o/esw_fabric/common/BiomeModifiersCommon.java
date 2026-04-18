@@ -57,12 +57,13 @@ public class BiomeModifiersCommon {
                 List.of("exosphere:swamp_ceiling", "exosphere:glow_berries", "exosphere:roots_lichen"));
 
         registerEntry("exosphere:ocean_decoration",
-                List.of("exosphere:lily_flower_patch", "exosphere:river_pool", "exosphere:mud_pool", "exosphere:tuff", 
-                    "exosphere:tuff_pool", "exosphere:wild_flower_patch", "exosphere:trees_branching_oak", "exosphere:common_clustered_tall_mushrooms", 
-                    "exosphere:oak_bush", "exosphere:noise_patch_waterlily", "exosphere:overworld_mushrooms", "exosphere:tall_grass", "exosphere:dense_rooted_azalea_trees", 
-                    "exosphere:rooted_towering_jungle_trees", "exosphere:rooted_branching_jungle_trees", "exosphere:rooted_jungle_bushes", 
-                    "exosphere:hanging_bee_hive", "exosphere:cave_leaf_vines", "exosphere:lush_cave_vines", "exosphere:dirt_pool_with_dripleaves", 
-                    "exosphere:sparse_lush_caves_vegetation", "exosphere:lush_spore_blossom"
+                List.of("exosphere:flowers/lily_flower_patch", "exosphere:river_pool", "exosphere:mud_pool", "exosphere:tuff", 
+                    "exosphere:tuff_pool", "exosphere:flowers/wild_flower_patch", "exosphere:trees_branching_oak", "exosphere:common_clustered_tall_mushrooms", 
+                    "exosphere:bushes/oak_bush", "exosphere:noise_patch_waterlily", "exosphere:overworld_mushrooms",
+                    "exosphere:tall_grass", "exosphere:dense_rooted_azalea_trees", "exosphere:rooted_towering_jungle_trees", 
+                    "exosphere:rooted_branching_jungle_trees", "exosphere:bushes/rooted_jungle_bushes", "exosphere:hanging_bee_hive", 
+                    "exosphere:cave_leaf_vines", "exosphere:lush_cave_vines", "exosphere:dirt_pool_with_dripleaves", 
+                    "exosphere:sparse_lush_caves_vegetation", "exosphere:lush_spore_blossom", "exosphere:dense_grass"
                 )
             );
     }

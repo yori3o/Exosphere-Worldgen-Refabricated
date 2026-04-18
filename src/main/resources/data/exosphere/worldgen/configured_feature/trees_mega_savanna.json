@@ -14,7 +14,7 @@
         "chance": 0.7
       }
     ],
-    "default": "exosphere:azalea_bush"
+    "default": "exosphere:bushes/azalea_bush"
   },
   "type": "minecraft:random_selector"
 }

@@ -34,9 +34,6 @@
         ],
         "blocks": "minecraft:moss_block"
       }
-    },
-    {
-      "type": "minecraft:biome"
     }
   ]
 }

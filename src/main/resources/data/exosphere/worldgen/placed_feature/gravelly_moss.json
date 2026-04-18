@@ -32,9 +32,6 @@
           "minecraft:gravel"
         ]
       }
-    },
-    {
-      "type": "minecraft:biome"
     }
   ]
 }

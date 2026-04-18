@@ -17,9 +17,6 @@
       {
         "heightmap": "OCEAN_FLOOR",
         "type": "minecraft:heightmap"
-      },
-      {
-        "type": "minecraft:biome"
       }
     ]
   }

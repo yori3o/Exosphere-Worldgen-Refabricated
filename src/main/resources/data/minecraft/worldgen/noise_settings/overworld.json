@@ -41,7 +41,7 @@
 			"shift_y": 0,
 			"shift_z": "minecraft:shift_z"
 		},
-		"continents": "minecraft:overworld/continents",
+		"continents": "esw_fabric:continents_small_oceans",
 		"erosion": "minecraft:overworld/erosion",
 		"depth": "minecraft:overworld/depth",
 		"ridges": "minecraft:overworld/ridges",

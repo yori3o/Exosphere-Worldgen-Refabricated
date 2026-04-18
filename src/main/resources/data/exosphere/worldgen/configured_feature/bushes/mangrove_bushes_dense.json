@@ -2,15 +2,15 @@
   "config": {
     "features": [
       {
-        "feature": "exosphere:mangrove_bush",
+        "feature": "exosphere:bushes/mangrove_bush",
         "chance": 0.57
       },
       {
-        "feature": "exosphere:rooted_bush",
+        "feature": "exosphere:bushes/rooted_bush",
         "chance": 0.22
       }
     ],
-    "default": "exosphere:mangrove_bush"
+    "default": "exosphere:bushes/mangrove_bush"
   },
   "type": "minecraft:random_selector"
 }

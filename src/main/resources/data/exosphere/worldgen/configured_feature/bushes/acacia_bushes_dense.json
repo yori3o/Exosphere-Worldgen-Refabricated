@@ -2,15 +2,15 @@
   "config": {
     "features": [
       {
-        "feature": "exosphere:acacia_bush",
+        "feature": "exosphere:bushes/acacia_bush",
         "chance": 0.57
       },
       {
-        "feature": "exosphere:rooted_bush",
+        "feature": "exosphere:bushes/rooted_bush",
         "chance": 0.23
       }
     ],
-    "default": "exosphere:acacia_bush"
+    "default": "exosphere:bushes/acacia_bush"
   },
   "type": "minecraft:random_selector"
 }

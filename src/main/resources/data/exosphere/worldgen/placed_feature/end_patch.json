@@ -32,9 +32,6 @@
         "type": "minecraft:matching_blocks",
         "blocks": "minecraft:end_stone"
       }
-    },
-    {
-      "type": "minecraft:biome"
     }
   ]
 }

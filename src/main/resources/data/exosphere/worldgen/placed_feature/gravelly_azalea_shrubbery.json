@@ -35,9 +35,6 @@
           "minecraft:mossy_cobblestone"
         ]
       }
-    },
-    {
-      "type": "minecraft:biome"
     }
   ]
 }

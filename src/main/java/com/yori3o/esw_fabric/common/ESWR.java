@@ -1,7 +1,7 @@
 package com.yori3o.esw_fabric.common;
 
 
-
+// esw = ExoSphere Worldgen, r = Refabricated 
 public class ESWR {
 
 

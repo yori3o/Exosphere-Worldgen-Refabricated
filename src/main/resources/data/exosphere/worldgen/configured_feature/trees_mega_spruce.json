@@ -10,7 +10,7 @@
         "chance": 0.07
       }
     ],
-    "default": "exosphere:spruce_bush"
+    "default": "exosphere:bushes/spruce_bush"
   },
   "type": "minecraft:random_selector"
 }

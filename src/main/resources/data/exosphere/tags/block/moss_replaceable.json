@@ -1,9 +1,8 @@
 {
-  "replace": false,
   "values": [
     "#minecraft:base_stone_overworld",
     "#minecraft:dirt",
-    "#minecraft:sand",
+    "#c:sands",
 	"#minecraft:terracotta",
     "#minecraft:badlands_terracotta",
     "minecraft:mud",

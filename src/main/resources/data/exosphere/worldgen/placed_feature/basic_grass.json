@@ -47,9 +47,6 @@
           "minecraft:podzol"
         ]
       }
-    },
-    {
-      "type": "minecraft:biome"
     }
   ]
 }
