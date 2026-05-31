@@ -1,0 +1,20 @@
+{
+  "config": {
+    "features": [
+      {
+        "feature": "minecraft:oak_bees_002",
+        "chance": 0.12
+      },
+      {
+        "feature": "exosphere:towering_spruce",
+        "chance": 0.12
+      },
+      {
+        "feature": "exosphere:bushes/oak_bush",
+        "chance": 0.66
+      }
+    ],
+    "default": "exosphere:towering_spruce"
+  },
+  "type": "minecraft:random_selector"
+}

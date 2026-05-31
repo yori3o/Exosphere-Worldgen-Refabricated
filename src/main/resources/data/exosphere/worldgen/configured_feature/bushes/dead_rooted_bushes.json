@@ -1,0 +1,16 @@
+{
+  "config": {
+    "features": [
+      {
+        "feature": "exosphere:bushes/short_rooted_bush",
+        "chance": 0.8
+      },
+      {
+        "feature": "exosphere:bushes/rooted_bush",
+        "chance": 0.2
+      }
+    ],
+    "default": "exosphere:bushes/short_rooted_bush"
+  },
+  "type": "minecraft:random_selector"
+}

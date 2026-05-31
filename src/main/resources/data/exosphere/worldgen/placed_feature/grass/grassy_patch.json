@@ -1,0 +1,51 @@
+{
+  "feature": "exosphere:grass/grassy_patch",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 196
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "WORLD_SURFACE_WG"
+    },
+    {
+      "type": "minecraft:random_offset",
+      "xz_spread": 7,
+      "y_spread": 3
+    },
+    {
+        "type": "minecraft:block_predicate_filter",
+        "predicate": {
+            "type": "minecraft:matching_blocks",
+            "offset": [
+                0,
+                -1,
+                0
+            ],
+            "blocks": [
+                "minecraft:snow_block",
+                "minecraft:grass_block",
+                "minecraft:dirt",
+                "minecraft:podzol",
+                "minecraft:coarse_dirt",
+                "minecraft:mycelium",
+                "minecraft:moss_block",
+                "minecraft:packed_mud",
+                "minecraft:mud",
+                "minecraft:red_sand"
+            ]
+        }
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:matching_block_tag",
+        "tag": "minecraft:air"
+      }
+    }
+  ]
+}

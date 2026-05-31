@@ -1,0 +1,16 @@
+{
+  "config": {
+    "features": [
+      {
+        "feature": "exosphere:mountainous_powder_snow_pile",
+        "chance": 0.75
+      },
+      {
+        "feature": "exosphere:mountainous_snow_pile",
+        "chance": 0.25
+      }
+    ],
+    "default": "exosphere:mountainous_snow_pile"
+  },
+  "type": "minecraft:random_selector"
+}

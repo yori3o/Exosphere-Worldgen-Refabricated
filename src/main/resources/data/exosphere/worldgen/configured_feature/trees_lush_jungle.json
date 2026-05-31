@@ -1,0 +1,20 @@
+{
+    "config": {
+      "features": [
+        {
+          "feature": "exosphere:twisted_oak",
+          "chance": 0.18
+        },
+        {
+          "feature": "exosphere:towering_jungle_tree",
+          "chance": 0.15
+        },
+        {
+          "feature": "minecraft:jungle_bush",
+          "chance": 0.57
+        }
+      ],
+      "default": "exosphere:branching_jungle_tree"
+    },
+    "type": "minecraft:random_selector"
+  }

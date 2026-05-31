@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:simple_block",
+    "config": {
+        "to_place": {
+        "type": "minecraft:weighted_state_provider",
+        "entries": [
+            {
+            "weight": 24,
+            "data": {
+                "Name": "minecraft:moss_carpet"
+            }
+            },
+            {
+            "weight": 1,
+            "data": {
+                "Name": "minecraft:mossy_cobblestone_slab"
+            }
+            }
+        ]
+        }
+    }
+}

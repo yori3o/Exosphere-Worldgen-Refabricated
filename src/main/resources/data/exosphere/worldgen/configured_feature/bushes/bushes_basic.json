@@ -1,0 +1,16 @@
+{
+  "config": {
+    "features": [
+      {
+        "feature": "exosphere:bushes/oak_bush",
+        "chance": 0.54
+      },
+      {
+        "feature": "exosphere:bushes/spruce_bush",
+        "chance": 0.16
+      }
+    ],
+    "default": "exosphere:bushes/oak_bush"
+  },
+  "type": "minecraft:random_selector"
+}

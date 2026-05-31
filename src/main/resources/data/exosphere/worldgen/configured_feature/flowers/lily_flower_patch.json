@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:simple_block",
+  "config": {
+    "to_place": {
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
+        {
+          "weight": 4,
+          "data": {
+            "Name": "minecraft:oxeye_daisy"
+          }
+        },
+        {
+          "weight": 2,
+          "data": {
+            "Name": "minecraft:lily_of_the_valley"
+          }
+        },
+        {
+          "weight": 4,
+          "data": {
+            "Name": "minecraft:blue_orchid"
+          }
+        }
+      ]
+    }
+  }
+}
