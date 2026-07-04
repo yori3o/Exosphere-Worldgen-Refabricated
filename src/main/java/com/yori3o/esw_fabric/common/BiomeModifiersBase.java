@@ -8,6 +8,8 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.Identifier;
 
+import com.yori3o.esw_fabric.common.config.DynamicConfigHandler;
+
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 
@@ -30,14 +32,14 @@ public class BiomeModifiersBase {
         add(Biomes.BADLANDS, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:basalt_rubble");
         add(Biomes.BADLANDS, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:trees_flooded_mangrove");
         add(Biomes.BADLANDS, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:flowers/red_flowers");
-        add(Biomes.BADLANDS, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:basic_grass");
-        add(Biomes.BADLANDS, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:fern_grass");
+        add(Biomes.BADLANDS, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:grass/basic_grass");
+        add(Biomes.BADLANDS, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:grass/fern_grass");
         add(Biomes.BAMBOO_JUNGLE, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:tuff");
         add(Biomes.BAMBOO_JUNGLE, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:tuff_pool");
         add(Biomes.BAMBOO_JUNGLE, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:dense_bamboo");
         add(Biomes.BAMBOO_JUNGLE, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:thick_bamboo");
-        add(Biomes.BAMBOO_JUNGLE, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:basic_grass");
-        add(Biomes.BAMBOO_JUNGLE, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:tall_grass");
+        add(Biomes.BAMBOO_JUNGLE, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:grass/basic_grass");
+        add(Biomes.BAMBOO_JUNGLE, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:grass/tall_grass");
         add(Biomes.BAMBOO_JUNGLE, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:dense_rooted_azalea_trees");
         add(Biomes.BAMBOO_JUNGLE, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:rooted_towering_jungle_trees");
         add(Biomes.BAMBOO_JUNGLE, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:rooted_branching_jungle_trees");
@@ -59,8 +61,8 @@ public class BiomeModifiersBase {
         add(Biomes.BIRCH_FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:bushes/bushes_dense");
         add(Biomes.BIRCH_FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:flowers/purple_flowers");
         add(Biomes.BIRCH_FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:overworld_mushrooms");
-        add(Biomes.BIRCH_FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:basic_grass");
-        add(Biomes.BIRCH_FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:tall_grass");
+        add(Biomes.BIRCH_FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:grass/basic_grass");
+        add(Biomes.BIRCH_FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:grass/tall_grass");
         add(Biomes.BIRCH_FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:dense_rooted_azalea_trees");
         add(Biomes.BIRCH_FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:rooted_big_tall_birch_trees");
         add(Biomes.BIRCH_FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:rooted_tilted_tall_birch_trees");
@@ -74,15 +76,15 @@ public class BiomeModifiersBase {
         add(Biomes.CHERRY_GROVE, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:tall_mushrooms");
         add(Biomes.CHERRY_GROVE, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:bushes/azalea_bushes");
         add(Biomes.CHERRY_GROVE, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:flowers/wild_flower_patch");
-        add(Biomes.CHERRY_GROVE, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:roses");
-        add(Biomes.CHERRY_GROVE, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:basic_grass");
+        add(Biomes.CHERRY_GROVE, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:flowers/roses");
+        add(Biomes.CHERRY_GROVE, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:grass/basic_grass");
         add(Biomes.CHERRY_GROVE, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:lush_spore_blossom");
         add(Biomes.DARK_FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:gravelly_azalea_shrubbery");
         add(Biomes.DARK_FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:rooted_dirt");
         add(Biomes.DARK_FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:moss_stones");
         add(Biomes.DARK_FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:rooted_dirt_pool");
         add(Biomes.DARK_FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:sparse_bamboo_cluster");
-        add(Biomes.DARK_FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:sparse_thick_bamboo");
+        //add(Biomes.DARK_FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:sparse_thick_bamboo");
         add(Biomes.DARK_FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:flowers/wild_flower_patch");
         add(Biomes.DARK_FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:trees_big_dark_oak");
         add(Biomes.DARK_FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:trees_normal_dark_oak");
@@ -92,9 +94,9 @@ public class BiomeModifiersBase {
         add(Biomes.DARK_FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:bushes/dark_oak_bushes");
         add(Biomes.DARK_FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:flowers/basic_flowers");
         add(Biomes.DARK_FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:overworld_mushrooms");
-        add(Biomes.DARK_FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:basic_grass");
-        add(Biomes.DARK_FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:tall_grass");
-        add(Biomes.DARK_FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:fern_grass");
+        add(Biomes.DARK_FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:grass/basic_grass");
+        add(Biomes.DARK_FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:grass/tall_grass");
+        add(Biomes.DARK_FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:grass/fern_grass");
         add(Biomes.DARK_FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:dense_rooted_azalea_trees");
         add(Biomes.DARK_FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:rooted_big_tall_birch_trees");
         add(Biomes.DARK_FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:rooted_tilted_tall_birch_trees");
@@ -111,13 +113,13 @@ public class BiomeModifiersBase {
         add(Biomes.DESERT, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:trees_flooded_mangrove");
         add(Biomes.DESERT, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:tall_cactus");
         add(Biomes.DESERT, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:flowers/red_flowers");
-        add(Biomes.DESERT, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:basic_grass");
-        add(Biomes.DESERT, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:tall_grass");
+        add(Biomes.DESERT, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:grass/basic_grass");
+        add(Biomes.DESERT, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:grass/tall_grass");
         add(Biomes.DESERT, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:large_dripstone");
         add(Biomes.DESERT, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:dripstone_cluster");
         add(Biomes.DESERT, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:pointed_dripstone");
         add(Biomes.DESERT, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:clay_pool_with_dripleaves");
-        add(Biomes.DRIPSTONE_CAVES, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:cave_moss_block");
+        add(Biomes.DRIPSTONE_CAVES, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:cave_moss_block_low");
         add(Biomes.DRIPSTONE_CAVES, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:clay_pool_with_dripleaves");
         add(Biomes.END_BARRENS, GenerationStep.Decoration.UNDERGROUND_ORES, "exosphere:end_patch");
         add(Biomes.END_BARRENS, GenerationStep.Decoration.FLUID_SPRINGS, "exosphere:end_ceiling");
@@ -166,7 +168,7 @@ public class BiomeModifiersBase {
         add(Biomes.FLOWER_FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:flowers/extra_lily_flower_patch");
         add(Biomes.FLOWER_FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:flowers/extra_tall_flower_patch");
         add(Biomes.FLOWER_FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:flowers/noise_flower_cherry");
-        add(Biomes.FLOWER_FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:basic_grass");
+        add(Biomes.FLOWER_FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:grass/basic_grass");
         add(Biomes.FLOWER_FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:lush_spore_blossom");
         add(Biomes.FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:gray_standalone_cliffs");
         add(Biomes.FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:mossy_stone_filler");
@@ -178,8 +180,8 @@ public class BiomeModifiersBase {
         add(Biomes.FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:bushes/bushes_dense");
         add(Biomes.FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:flowers/basic_flowers");
         add(Biomes.FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:overworld_mushrooms");
-        add(Biomes.FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:basic_grass");
-        add(Biomes.FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:fern_grass");
+        add(Biomes.FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:grass/basic_grass");
+        add(Biomes.FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:grass/fern_grass");
         add(Biomes.FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:dense_rooted_azalea_trees");
         add(Biomes.FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:rooted_big_tall_birch_trees");
         add(Biomes.FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:rooted_tilted_tall_birch_trees");
@@ -192,7 +194,7 @@ public class BiomeModifiersBase {
         add(Biomes.FROZEN_PEAKS, GenerationStep.Decoration.UNDERGROUND_ORES, "exosphere:mountainous_snow");
         add(Biomes.FROZEN_PEAKS, GenerationStep.Decoration.UNDERGROUND_DECORATION, "exosphere:sculk_vein");
         add(Biomes.FROZEN_PEAKS, GenerationStep.Decoration.UNDERGROUND_DECORATION, "exosphere:sculk_patch_deep_dark");
-        add(Biomes.FROZEN_PEAKS, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:cave_moss_block");
+        //add(Biomes.FROZEN_PEAKS, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:cave_moss_block");
         add(Biomes.FROZEN_RIVER, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:large_dripstone");
         add(Biomes.FROZEN_RIVER, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:dripstone_cluster");
         add(Biomes.FROZEN_RIVER, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:pointed_dripstone");
@@ -209,7 +211,7 @@ public class BiomeModifiersBase {
         add(Biomes.ICE_SPIKES, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:tall_mushrooms");
         add(Biomes.ICE_SPIKES, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:bushes/bushes_dense");
         add(Biomes.ICE_SPIKES, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:flowers/purple_flowers");
-        add(Biomes.ICE_SPIKES, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:fern_grass");
+        add(Biomes.ICE_SPIKES, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:grass/fern_grass");
         add(Biomes.ICE_SPIKES, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:snowy_pool_with_ice");
         add(Biomes.ICE_SPIKES, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:powdered_snow_pool");
         add(Biomes.ICE_SPIKES, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:patch_snow_layer");
@@ -238,9 +240,9 @@ public class BiomeModifiersBase {
         add(Biomes.JUNGLE, GenerationStep.Decoration.UNDERGROUND_STRUCTURES, "exosphere:sparse_lush_caves_vegetation");
         add(Biomes.JUNGLE, GenerationStep.Decoration.UNDERGROUND_STRUCTURES, "exosphere:lush_spore_blossom");
         add(Biomes.JUNGLE, GenerationStep.Decoration.UNDERGROUND_STRUCTURES, "exosphere:lush_cave_vines");
-        add(Biomes.JUNGLE, GenerationStep.Decoration.UNDERGROUND_STRUCTURES, "exosphere:dense_grass");
+        add(Biomes.JUNGLE, GenerationStep.Decoration.UNDERGROUND_STRUCTURES, "exosphere:grass/dense_grass");
         add(Biomes.JUNGLE, GenerationStep.Decoration.UNDERGROUND_STRUCTURES, "exosphere:trees_azalea");
-        add(Biomes.JUNGLE, GenerationStep.Decoration.UNDERGROUND_STRUCTURES, "exosphere:tall_grass");
+        add(Biomes.JUNGLE, GenerationStep.Decoration.UNDERGROUND_STRUCTURES, "exosphere:grass/tall_grass");
         add(Biomes.JUNGLE, GenerationStep.Decoration.UNDERGROUND_STRUCTURES, "exosphere:tuff_pool");
         add(Biomes.JUNGLE, GenerationStep.Decoration.UNDERGROUND_STRUCTURES, "exosphere:rooted_branching_jungle_trees");
         add(Biomes.MANGROVE_SWAMP, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:tuff");
@@ -269,8 +271,8 @@ public class BiomeModifiersBase {
         add(Biomes.MEADOW, GenerationStep.Decoration.FLUID_SPRINGS, "exosphere:bushes/azalea_bushes");
         add(Biomes.MEADOW, GenerationStep.Decoration.FLUID_SPRINGS, "exosphere:bushes/mangrove_bushes_dense");
         add(Biomes.MEADOW, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:flowers/dense_flower_meadow");
-        add(Biomes.MEADOW, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:basic_grass");
-        add(Biomes.MEADOW, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:tall_grass");
+        add(Biomes.MEADOW, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:grass/basic_grass");
+        add(Biomes.MEADOW, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:grass/tall_grass");
         add(Biomes.MUSHROOM_FIELDS, GenerationStep.Decoration.UNDERGROUND_DECORATION, "exosphere:deepslate_calcite_blob");
         add(Biomes.MUSHROOM_FIELDS, GenerationStep.Decoration.UNDERGROUND_DECORATION, "exosphere:smooth_basalt_calcite_blob");
         add(Biomes.MUSHROOM_FIELDS, GenerationStep.Decoration.FLUID_SPRINGS, "exosphere:mud");
@@ -282,8 +284,8 @@ public class BiomeModifiersBase {
         add(Biomes.OLD_GROWTH_BIRCH_FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:bushes/bushes_dense");
         add(Biomes.OLD_GROWTH_BIRCH_FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:flowers/purple_flowers");
         add(Biomes.OLD_GROWTH_BIRCH_FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:overworld_mushrooms");
-        add(Biomes.OLD_GROWTH_BIRCH_FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:basic_grass");
-        add(Biomes.OLD_GROWTH_BIRCH_FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:tall_grass");
+        add(Biomes.OLD_GROWTH_BIRCH_FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:grass/basic_grass");
+        add(Biomes.OLD_GROWTH_BIRCH_FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:grass/tall_grass");
         add(Biomes.OLD_GROWTH_BIRCH_FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:dense_rooted_azalea_trees");
         add(Biomes.OLD_GROWTH_BIRCH_FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:rooted_big_tall_birch_trees");
         add(Biomes.OLD_GROWTH_BIRCH_FOREST, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:rooted_tilted_tall_birch_trees");
@@ -325,8 +327,8 @@ public class BiomeModifiersBase {
         add(Biomes.PLAINS, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:bushes/bushes_clustered");
         add(Biomes.PLAINS, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:flowers/basic_flowers");
         add(Biomes.PLAINS, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:clustered_overworld_mushrooms");
-        add(Biomes.PLAINS, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:basic_grass");
-        add(Biomes.PLAINS, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:plains_grass");
+        add(Biomes.PLAINS, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:grass/basic_grass");
+        add(Biomes.PLAINS, GenerationStep.Decoration.VEGETAL_DECORATION, "minecraft:patch_grass_plain");
         add(Biomes.PLAINS, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:dense_rooted_azalea_trees");
         add(Biomes.PLAINS, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:rooted_big_tall_birch_trees");
         add(Biomes.PLAINS, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:rooted_tilted_tall_birch_trees");
@@ -340,7 +342,7 @@ public class BiomeModifiersBase {
         add(Biomes.RIVER, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:bushes/bushes_dense");
         add(Biomes.RIVER, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:flowers/basic_flowers");
         add(Biomes.RIVER, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:overworld_mushrooms");
-        add(Biomes.RIVER, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:tall_grass");
+        add(Biomes.RIVER, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:grass/tall_grass");
         add(Biomes.RIVER, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:large_dripstone");
         add(Biomes.RIVER, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:dripstone_cluster");
         add(Biomes.RIVER, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:pointed_dripstone");
@@ -354,8 +356,8 @@ public class BiomeModifiersBase {
         add(Biomes.SAVANNA, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:flowers/sparse_sunflowers");
         add(Biomes.SAVANNA, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:flowers/extra_lily_flower_patch");
         add(Biomes.SAVANNA, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:flowers/red_flowers");
-        add(Biomes.SAVANNA, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:dense_grass");
-        add(Biomes.SAVANNA, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:tall_grass");
+        add(Biomes.SAVANNA, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:grass/dense_grass");
+        add(Biomes.SAVANNA, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:grass/tall_grass");
         add(Biomes.SAVANNA, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:dense_rooted_azalea_trees");
         add(Biomes.SAVANNA, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:rooted_towering_jungle_trees");
         add(Biomes.SAVANNA, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:rooted_branching_jungle_trees");
@@ -373,8 +375,8 @@ public class BiomeModifiersBase {
         add(Biomes.SAVANNA_PLATEAU, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:bushes/mangrove_bushes_dense");
         add(Biomes.SAVANNA_PLATEAU, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:flowers/dense_sunflowers");
         add(Biomes.SAVANNA_PLATEAU, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:flowers/red_flowers");
-        add(Biomes.SAVANNA_PLATEAU, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:basic_grass");
-        add(Biomes.SAVANNA_PLATEAU, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:tall_grass");
+        add(Biomes.SAVANNA_PLATEAU, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:grass/basic_grass");
+        add(Biomes.SAVANNA_PLATEAU, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:grass/tall_grass");
         add(Biomes.SAVANNA_PLATEAU, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:dense_rooted_azalea_trees");
         add(Biomes.SAVANNA_PLATEAU, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:rooted_towering_jungle_trees");
         add(Biomes.SAVANNA_PLATEAU, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:rooted_branching_jungle_trees");
@@ -401,8 +403,8 @@ public class BiomeModifiersBase {
         add(Biomes.SNOWY_BEACH, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:clay_pool_with_dripleaves");
         add(Biomes.SNOWY_PLAINS, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:white_stones");
         add(Biomes.SNOWY_PLAINS, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:sparse_ice_spike");
-        add(Biomes.SNOWY_PLAINS, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:basic_grass");
-        add(Biomes.SNOWY_PLAINS, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:fern_grass");
+        add(Biomes.SNOWY_PLAINS, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:grass/basic_grass");
+        add(Biomes.SNOWY_PLAINS, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:grass/fern_grass");
         add(Biomes.SNOWY_PLAINS, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:snowy_pool_with_ice");
         add(Biomes.SNOWY_PLAINS, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:powdered_snow_pool");
         add(Biomes.SNOWY_PLAINS, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:patch_snow_layer");
@@ -416,8 +418,8 @@ public class BiomeModifiersBase {
         add(Biomes.SNOWY_TAIGA, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:trees_mega_spruce");
         add(Biomes.SNOWY_TAIGA, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:trees_thin_spruce");
         add(Biomes.SNOWY_TAIGA, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:trees_noise_thin_spruce");
-        add(Biomes.SNOWY_TAIGA, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:basic_grass");
-        add(Biomes.SNOWY_TAIGA, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:fern_grass");
+        add(Biomes.SNOWY_TAIGA, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:grass/basic_grass");
+        add(Biomes.SNOWY_TAIGA, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:grass/fern_grass");
         add(Biomes.SNOWY_TAIGA, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:snowy_pool_with_ice");
         add(Biomes.SNOWY_TAIGA, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:powdered_snow_pool");
         add(Biomes.SNOWY_TAIGA, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:patch_snow_layer");
@@ -427,8 +429,8 @@ public class BiomeModifiersBase {
         add(Biomes.SPARSE_JUNGLE, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:flowers/red_flowers");
         add(Biomes.SPARSE_JUNGLE, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:overworld_mushrooms");
         add(Biomes.SPARSE_JUNGLE, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:nether_mushrooms");
-        add(Biomes.SPARSE_JUNGLE, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:basic_grass");
-        add(Biomes.SPARSE_JUNGLE, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:tall_grass");
+        add(Biomes.SPARSE_JUNGLE, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:grass/basic_grass");
+        add(Biomes.SPARSE_JUNGLE, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:grass/tall_grass");
         add(Biomes.SPARSE_JUNGLE, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:dense_rooted_azalea_trees");
         add(Biomes.SPARSE_JUNGLE, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:rooted_towering_jungle_trees");
         add(Biomes.SPARSE_JUNGLE, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:rooted_branching_jungle_trees");
@@ -459,8 +461,8 @@ public class BiomeModifiersBase {
         add(Biomes.SUNFLOWER_PLAINS, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:flowers/basic_flowers");
         add(Biomes.SUNFLOWER_PLAINS, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:clustered_overworld_mushrooms");
         add(Biomes.SUNFLOWER_PLAINS, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:clustered_nether_mushrooms");
-        add(Biomes.SUNFLOWER_PLAINS, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:basic_grass");
-        add(Biomes.SUNFLOWER_PLAINS, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:plains_grass");
+        add(Biomes.SUNFLOWER_PLAINS, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:grass/basic_grass");
+        add(Biomes.SUNFLOWER_PLAINS, GenerationStep.Decoration.VEGETAL_DECORATION, "minecraft:patch_grass_plain");
         add(Biomes.SUNFLOWER_PLAINS, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:clustered_pumpkin");
         add(Biomes.SUNFLOWER_PLAINS, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:dense_rooted_azalea_trees");
         add(Biomes.SUNFLOWER_PLAINS, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:rooted_big_tall_birch_trees");
@@ -480,8 +482,8 @@ public class BiomeModifiersBase {
         add(Biomes.SWAMP, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:noise_patch_waterlily");
         add(Biomes.SWAMP, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:overworld_mushrooms");
         add(Biomes.SWAMP, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:nether_mushrooms");
-        add(Biomes.SWAMP, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:dense_grass");
-        add(Biomes.SWAMP, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:tall_grass");
+        add(Biomes.SWAMP, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:grass/dense_grass");
+        add(Biomes.SWAMP, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:grass/tall_grass");
         add(Biomes.SWAMP, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:dense_rooted_azalea_trees");
         add(Biomes.SWAMP, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:rooted_towering_jungle_trees");
         add(Biomes.SWAMP, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:rooted_branching_jungle_trees");
@@ -505,8 +507,8 @@ public class BiomeModifiersBase {
         add(Biomes.TAIGA, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:bushes/bushes_taiga");
         add(Biomes.TAIGA, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:flowers/red_flowers");
         add(Biomes.TAIGA, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:overworld_mushrooms");
-        add(Biomes.TAIGA, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:basic_grass");
-        add(Biomes.TAIGA, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:fern_grass");
+        add(Biomes.TAIGA, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:grass/basic_grass");
+        add(Biomes.TAIGA, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:grass/fern_grass");
         add(Biomes.TAIGA, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:trees_pine_taiga");
         add(Biomes.TAIGA, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:patch_berry");
         add(Biomes.TAIGA, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:large_dripstone");
@@ -529,10 +531,10 @@ public class BiomeModifiersBase {
         add(Biomes.WINDSWEPT_GRAVELLY_HILLS, GenerationStep.Decoration.LOCAL_MODIFICATIONS, "exosphere:sculk_patch_deep_dark");
         add(Biomes.WINDSWEPT_GRAVELLY_HILLS, GenerationStep.Decoration.LOCAL_MODIFICATIONS, "exosphere:sculk_vein");
         add(Biomes.WINDSWEPT_GRAVELLY_HILLS, GenerationStep.Decoration.LOCAL_MODIFICATIONS, "exosphere:emerald_rocks");
-        add(Biomes.WINDSWEPT_GRAVELLY_HILLS, GenerationStep.Decoration.UNDERGROUND_DECORATION, "exosphere:tall_grass");
+        add(Biomes.WINDSWEPT_GRAVELLY_HILLS, GenerationStep.Decoration.UNDERGROUND_DECORATION, "exosphere:grass/tall_grass");
         add(Biomes.WINDSWEPT_GRAVELLY_HILLS, GenerationStep.Decoration.UNDERGROUND_DECORATION, "exosphere:dense_noise_tall_brown_mushrooms");
         add(Biomes.WINDSWEPT_GRAVELLY_HILLS, GenerationStep.Decoration.UNDERGROUND_DECORATION, "exosphere:flowers/wild_flower_patch");
-        add(Biomes.WINDSWEPT_GRAVELLY_HILLS, GenerationStep.Decoration.UNDERGROUND_DECORATION, "exosphere:dense_grass");
+        add(Biomes.WINDSWEPT_GRAVELLY_HILLS, GenerationStep.Decoration.UNDERGROUND_DECORATION, "exosphere:grass/dense_grass");
         add(Biomes.WINDSWEPT_GRAVELLY_HILLS, GenerationStep.Decoration.UNDERGROUND_DECORATION, "exosphere:sparse_tall_red_mushrooms");
         add(Biomes.WINDSWEPT_GRAVELLY_HILLS, GenerationStep.Decoration.UNDERGROUND_DECORATION, "exosphere:clustered_overworld_mushrooms");
         add(Biomes.WINDSWEPT_GRAVELLY_HILLS, GenerationStep.Decoration.UNDERGROUND_DECORATION, "exosphere:gray_stones");
@@ -546,7 +548,7 @@ public class BiomeModifiersBase {
         add(Biomes.WINDSWEPT_HILLS, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:sparse_tall_brown_mushrooms");
         add(Biomes.WINDSWEPT_HILLS, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:bushes/dense_bushes_clustered");
         add(Biomes.WINDSWEPT_HILLS, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:clustered_overworld_mushrooms");
-        add(Biomes.WINDSWEPT_HILLS, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:dense_grass");
+        add(Biomes.WINDSWEPT_HILLS, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:grass/dense_grass");
         add(Biomes.WINDSWEPT_SAVANNA, GenerationStep.Decoration.FLUID_SPRINGS, "exosphere:dense_noise_tall_brown_mushrooms");
         add(Biomes.WINDSWEPT_SAVANNA, GenerationStep.Decoration.FLUID_SPRINGS, "exosphere:bushes/azalea_bushes");
         add(Biomes.WINDSWEPT_SAVANNA, GenerationStep.Decoration.FLUID_SPRINGS, "exosphere:bushes/acacia_bushes_dense");
@@ -555,8 +557,8 @@ public class BiomeModifiersBase {
         add(Biomes.WINDSWEPT_SAVANNA, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:flowers/wild_flower_patch");
         add(Biomes.WINDSWEPT_SAVANNA, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:dense_mushroom_savanna");
         add(Biomes.WINDSWEPT_SAVANNA, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:trees_noise_mega_savanna");
-        add(Biomes.WINDSWEPT_SAVANNA, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:basic_grass");
-        add(Biomes.WINDSWEPT_SAVANNA, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:tall_grass");
+        add(Biomes.WINDSWEPT_SAVANNA, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:grass/basic_grass");
+        add(Biomes.WINDSWEPT_SAVANNA, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:grass/tall_grass");
         add(Biomes.WINDSWEPT_SAVANNA, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:dense_rooted_azalea_trees");
         add(Biomes.WINDSWEPT_SAVANNA, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:rooted_towering_jungle_trees");
         add(Biomes.WINDSWEPT_SAVANNA, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:rooted_branching_jungle_trees");
@@ -580,6 +582,11 @@ public class BiomeModifiersBase {
     }
     
 	private static void add(ResourceKey<Biome> biome, GenerationStep.Decoration step, String featureId) {
+
+        if (DynamicConfigHandler.server().featuresBlacklist.contains(featureId) != DynamicConfigHandler.server().whitelistMode) {
+            return;
+        }
+
         BiomeModifications.addFeature(
             BiomeSelectors.includeByKey(biome),
             step,

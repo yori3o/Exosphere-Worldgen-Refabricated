@@ -7,19 +7,19 @@
         "type": "minecraft:weighted_list",
         "distribution": [
           {
-            "data": 5,
+            "data": 50,
             "weight": 1
           },
           {
-            "data": 3,
+            "data": 30,
             "weight": 6
           },
           {
-            "data": 1,
+            "data": 10,
             "weight": 24
           },
           {
-            "data": 2,
+            "data": 20,
             "weight": 17
           },
           {
@@ -33,12 +33,38 @@
       "type": "minecraft:in_square"
     },
     {
+      "type": "minecraft:random_offset",
+      "xz_spread": 7,
+      "y_spread": 3
+    },
+    {
       "max_water_depth": 0,
       "type": "minecraft:surface_water_depth_filter"
     },
     {
       "heightmap": "OCEAN_FLOOR",
       "type": "minecraft:heightmap"
-    }
+    },
+    {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:all_of",
+            "predicates": [
+              {
+                "type": "minecraft:matching_blocks",
+                "blocks": "minecraft:air"
+              },
+              {
+                "type": "minecraft:would_survive",
+                "state": {
+                  "Name": "minecraft:bamboo",
+                  "Properties": {
+                    "age": "0"
+                  }
+                }
+              }
+            ]
+          }
+        }
   ]
 }

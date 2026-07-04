@@ -1,5 +1,5 @@
 {
-  "feature": "minecraft:patch_berry_bush",
+  "feature": "exosphere:minecraft/berry_bush",
   "placement": [
     {
       "type": "minecraft:noise_based_count",
@@ -8,11 +8,27 @@
       "noise_offset": -0.3
     },
     {
+      "type": "minecraft:count",
+      "count": 16
+    },
+    {
       "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:random_offset",
+      "xz_spread": 7,
+      "y_spread": 3
     },
     {
       "type": "minecraft:heightmap",
       "heightmap": "WORLD_SURFACE_WG"
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:matching_block_tag",
+        "tag": "minecraft:air"
+      }
     }
   ]
 }

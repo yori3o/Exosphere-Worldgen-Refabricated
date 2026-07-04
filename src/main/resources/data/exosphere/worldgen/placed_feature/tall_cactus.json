@@ -9,12 +9,17 @@
       "type": "minecraft:count",
       "count": {
         "type": "minecraft:uniform",
-        "min_inclusive": 6,
-        "max_inclusive": 18
+        "min_inclusive": 8,
+        "max_inclusive": 64
       }
     },
     {
       "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:random_offset",
+      "xz_spread": 7,
+      "y_spread": 3
     },
     {
       "max_water_depth": 0,
@@ -23,6 +28,27 @@
     {
       "heightmap": "OCEAN_FLOOR",
       "type": "minecraft:heightmap"
-    }
+    },
+    {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:all_of",
+            "predicates": [
+              {
+                "type": "minecraft:matching_blocks",
+                "blocks": "minecraft:air"
+              },
+              {
+                "type": "minecraft:would_survive",
+                "state": {
+                  "Name": "minecraft:cactus",
+                  "Properties": {
+                    "age": "0"
+                  }
+                }
+              }
+            ]
+          }
+        }
   ]
 }

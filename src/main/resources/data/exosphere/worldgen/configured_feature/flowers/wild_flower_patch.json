@@ -16,13 +16,13 @@
       },
       {
         "chance": 0.34,
-        "feature": "exosphere:grassy_patch"
+        "feature": "exosphere:grass/grassy_patch"
       },
       {
         "chance": 0.16,
         "feature": "exosphere:flowers/tall_flower_patch"
       }
     ],
-    "default": "exosphere:grassy_patch"
+    "default": "exosphere:grass/grassy_patch"
   }
 }

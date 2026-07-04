@@ -1,6 +1,8 @@
 package com.yori3o.esw_fabric.common;
 
 
+import com.yori3o.esw_fabric.common.config.DynamicConfigHandler;
+
 // esw = ExoSphere Worldgen, r = Refabricated 
 public class ESWR {
 
@@ -9,6 +11,8 @@ public class ESWR {
     
 
 	public void init() {
+
+        DynamicConfigHandler.loadServer();
 
         BiomeModifiersBase.modify();
         BiomeModifiersCommon.modify();

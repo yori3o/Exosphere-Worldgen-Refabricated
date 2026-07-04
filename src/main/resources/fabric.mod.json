@@ -20,9 +20,12 @@
 			"com.yori3o.esw_fabric.fabric.ESWRFabric"
 		]
 	},
+    "mixins": [
+        "esw_fabric-common.mixins.json"
+    ],
 	"depends": {
-		"fabricloader": ">=0.17.0",
-		"minecraft": "1.21.11",
+		"fabricloader": "*",
+		"minecraft": ">=1.21.11",
 		"fabric-api": "*"
 	},
     "custom": {

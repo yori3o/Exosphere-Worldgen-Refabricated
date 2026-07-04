@@ -1,5 +1,6 @@
 {
 	"values": [
+        "#c:is_aquatic_icy",
         "#c:is_icy",
         "#c:is_snowy",
         "#c:is_cold/overworld"

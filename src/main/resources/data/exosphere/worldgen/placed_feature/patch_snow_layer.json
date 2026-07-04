@@ -3,10 +3,15 @@
   "placement": [
     {
       "type": "minecraft:count",
-      "count": 50
+      "count": 256
     },
     {
       "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:random_offset",
+      "xz_spread": 3,
+      "y_spread": 2
     },
     {
       "type": "minecraft:height_range",
@@ -31,6 +36,31 @@
         "type": "minecraft:matching_blocks",
         "blocks": "minecraft:air"
       }
-    }
+    },
+    {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:all_of",
+            "predicates": [
+              {
+                "type": "minecraft:matching_blocks",
+                "blocks": "minecraft:air"
+              },
+              {
+                "type": "minecraft:matching_blocks",
+                "offset": [
+                  0,
+                  -1,
+                  0
+                ],
+                "blocks": [
+                  "minecraft:snow_block",
+                  "minecraft:packed_ice",
+                  "minecraft:calcite"
+                ]
+              }
+            ]
+          }
+        }
   ]
 }

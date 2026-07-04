@@ -29,6 +29,11 @@
       "type": "minecraft:in_square"
     },
     {
+      "type": "minecraft:random_offset",
+      "xz_spread": 0,
+      "y_spread": -1
+    },
+    {
       "type": "minecraft:height_range",
       "height": {
         "type": "minecraft:uniform",
@@ -51,11 +56,6 @@
         "type": "minecraft:matching_blocks",
         "blocks": "minecraft:air"
       }
-    },
-    {
-      "type": "minecraft:random_offset",
-      "xz_spread": 0,
-      "y_spread": -1
     }
   ]
 }
