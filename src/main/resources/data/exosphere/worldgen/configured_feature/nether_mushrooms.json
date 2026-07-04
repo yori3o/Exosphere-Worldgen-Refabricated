@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:simple_block",
+    "config": {
+        "to_place": {
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
+                {
+                "weight": 4,
+                "data": {
+                    "Name": "minecraft:warped_fungus"
+                }
+                },
+                {
+                "weight": 6,
+                "data": {
+                    "Name": "minecraft:crimson_fungus"
+                }
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+  "config": {
+    "features": [
+      {
+        "feature": "exosphere:snowy_cherry_bees",
+        "chance": 0.12
+      },
+      {
+        "feature": "exosphere:trunked_spruce",
+        "chance": 0.12
+      },
+      {
+        "feature": "exosphere:towering_spruce",
+        "chance": 0.66
+      }
+    ],
+    "default": "exosphere:towering_spruce"
+  },
+  "type": "minecraft:random_selector"
+}

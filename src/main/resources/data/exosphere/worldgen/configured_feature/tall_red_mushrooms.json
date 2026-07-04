@@ -1,0 +1,16 @@
+{
+  "config": {
+    "features": [
+      {
+        "feature": "exosphere:big_tall_mushroom",
+        "chance": 0.33
+      },
+      {
+        "feature": "exosphere:huge_red_mushroom",
+        "chance": 0.67
+      }
+    ],
+    "default": "exosphere:big_tall_mushroom"
+  },
+  "type": "minecraft:random_selector"
+}

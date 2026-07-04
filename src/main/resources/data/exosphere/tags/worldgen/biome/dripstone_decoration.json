@@ -1,0 +1,11 @@
+{
+	"values": [
+		"minecraft:eroded_badlands",
+		"minecraft:badlands",
+		"minecraft:desert",
+		"minecraft:deep_dark",
+		"minecraft:pale_garden",
+		"minecraft:taiga",
+        "#c:is_sparse_vegetation/overworld"
+	]
+}

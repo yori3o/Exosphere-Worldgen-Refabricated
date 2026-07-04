@@ -1,0 +1,68 @@
+{
+  "feature": "exosphere:moss_patch",
+  "placement": [
+    {
+      "type": "minecraft:noise_based_count",
+      "noise_to_count_ratio": 3,
+      "noise_factor": 2,
+      "noise_offset": 0.07
+    },
+    {
+      "type": "minecraft:count",
+      "count": 42
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:random_offset",
+      "xz_spread": 2,
+      "y_spread": 2
+    },
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "OCEAN_FLOOR"
+    },
+    {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:all_of",
+            "predicates": [
+              {
+                "type": "minecraft:matching_blocks",
+                "offset": [
+                  0,
+                  0,
+                  0
+                ],
+                "blocks": [
+                  "minecraft:air",
+                  "minecraft:short_grass",
+                  "minecraft:snow"
+                ]
+              },
+              {
+                "type": "minecraft:matching_blocks",
+                "offset": [
+                  0,
+                  -1,
+                  0
+                ],
+                "blocks": [
+                  "minecraft:snow_block",
+                  "minecraft:grass_block",
+                  "minecraft:dirt",
+                  "minecraft:podzol",
+                  "minecraft:coarse_dirt",
+                  "minecraft:mycelium",
+                  "minecraft:moss_block",
+                  "minecraft:packed_mud",
+                  "minecraft:mud",
+                  "minecraft:red_sand"
+                ]
+              }
+            ]
+          }
+        }
+  ]
+}

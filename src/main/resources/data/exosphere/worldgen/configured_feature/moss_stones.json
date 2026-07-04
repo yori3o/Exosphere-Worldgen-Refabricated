@@ -1,0 +1,52 @@
+{
+    "type": "minecraft:simple_block",
+    "config": {
+        "to_place": {
+        "type": "minecraft:weighted_state_provider",
+        "entries": [
+            {
+            "weight": 38,
+            "data": {
+                "Name": "minecraft:mossy_cobblestone_slab"
+            }
+            },
+            {
+            "weight": 13,
+            "data": {
+                "Name": "minecraft:stone_slab"
+            }
+            },
+            {
+            "weight": 7,
+            "data": {
+                "Name": "minecraft:cobblestone_slab"
+            }
+            },
+            {
+            "weight": 1,
+            "data": {
+                "Name": "minecraft:cobblestone_wall"
+            }
+            },
+            {
+            "weight": 3,
+            "data": {
+                "Name": "minecraft:mossy_cobblestone_wall"
+            }
+            },
+            {
+            "weight": 1,
+            "data": {
+                "Name": "minecraft:stone"
+            }
+            },
+            {
+            "weight": 3,
+            "data": {
+                "Name": "minecraft:mossy_cobblestone"
+            }
+            }
+        ]
+        }
+    }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:mineshaft",
+  "biomes": "#minecraft:has_structure/mineshaft",
+  "terrain_adaptation": "beard_box",
+  "mineshaft_type": "normal",
+  "spawn_overrides": {},
+  "step": "underground_structures"
+}

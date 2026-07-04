@@ -1,0 +1,16 @@
+{
+  "config": {
+    "features": [
+      {
+        "feature": "exosphere:andesite_mountainous_rocks",
+        "chance": 0.82
+      },
+      {
+        "feature": "exosphere:tuff_mountainous_rocks",
+        "chance": 0.18
+      }
+    ],
+    "default": "exosphere:andesite_mountainous_rocks"
+  },
+  "type": "minecraft:random_selector"
+}

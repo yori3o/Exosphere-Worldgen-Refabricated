@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:block_column",
+  "config": {
+    "allowed_placement": {
+      "type": "minecraft:inside_world_bounds"
+    },
+    "direction": "down",
+    "layers": [
+      {
+        "height": 1,
+        "provider": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "minecraft:amethyst_cluster",
+            "Properties": {
+              "facing": "up"
+            }
+          }
+        }
+      },
+      {
+        "height": 1,
+        "provider": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "minecraft:amethyst_cluster",
+            "Properties": {
+              "facing": "down"
+            }
+          }
+        }
+      }
+    ],
+    "prioritize_tip": true
+  }
+}

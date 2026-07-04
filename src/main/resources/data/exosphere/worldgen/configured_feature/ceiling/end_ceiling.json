@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:vegetation_patch",
+  "config": {
+    "depth": {
+      "type": "minecraft:uniform",
+      "max_inclusive": 6,
+      "min_inclusive": 3
+    },
+    "extra_bottom_block_chance": 0,
+    "extra_edge_column_chance": 0.05,
+    "ground_state": {
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
+        {
+          "weight": 48,
+          "data": {
+            "Name": "minecraft:smooth_basalt"
+          }
+        },
+        {
+          "weight": 1,
+          "data": {
+            "Name": "minecraft:crying_obsidian"
+          }
+        }
+      ]
+    },
+    "replaceable": "#exosphere:end_replaceable",
+    "surface": "ceiling",
+    "vegetation_chance": 0.05,
+    "vegetation_feature": {
+      "feature": "exosphere:ceiling/chorus_vines",
+      "placement": []
+    },
+    "vertical_range": 7,
+    "xz_radius": {
+      "type": "minecraft:uniform",
+      "max_inclusive": 7,
+      "min_inclusive": 4
+    }
+  }
+}

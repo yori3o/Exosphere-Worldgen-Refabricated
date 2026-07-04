@@ -1,0 +1,20 @@
+{
+    "config": {
+      "features": [
+        {
+          "feature": "exosphere:tilted_tall_birch",
+          "chance": 0.28
+        },
+        {
+          "feature": "exosphere:big_tall_birch",
+          "chance": 0.47
+        },
+        {
+          "feature": "exosphere:normal_tall_birch",
+          "chance": 0.2
+        }
+      ],
+      "default": "exosphere:normal_tall_birch"
+    },
+    "type": "minecraft:random_selector"
+  }

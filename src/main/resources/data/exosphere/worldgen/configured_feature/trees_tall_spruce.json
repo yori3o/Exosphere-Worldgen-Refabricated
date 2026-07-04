@@ -1,0 +1,28 @@
+{
+  "config": {
+    "features": [
+      {
+        "feature": "minecraft:birch_bees_002",
+        "chance": 0.04
+      },
+      {
+        "feature": "exosphere:towering_mega_spruce",
+        "chance": 0.02
+      },
+      {
+        "feature": "exosphere:towering_spruce",
+        "chance": 0.16
+      },
+      {
+        "feature": "exosphere:branching_spruce",
+        "chance": 0.5
+      },
+      {
+        "feature": "exosphere:trunked_spruce",
+        "chance": 0.18
+      }
+    ],
+    "default": "exosphere:towering_spruce"
+  },
+  "type": "minecraft:random_selector"
+}
