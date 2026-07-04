@@ -13,7 +13,10 @@
             {
             "weight": 1,
             "data": {
-                "Name": "minecraft:tall_grass"
+                "Name": "minecraft:tall_grass",
+                "Properties": {
+                    "half": "lower"
+                }
             }
             }
         ]

@@ -20,6 +20,9 @@
 			"com.yori3o.esw_fabric.fabric.ESWRFabric"
 		]
 	},
+    "mixins": [
+        "esw_fabric-common.mixins.json"
+    ],
 	"depends": {
 		"fabricloader": "*",
 		"minecraft": ">=26.1",

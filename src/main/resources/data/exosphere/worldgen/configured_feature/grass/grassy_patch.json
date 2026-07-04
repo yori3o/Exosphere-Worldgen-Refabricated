@@ -25,13 +25,19 @@
             {
             "weight": 3,
             "data": {
-                "Name": "minecraft:tall_grass"
+                "Name": "minecraft:tall_grass",
+                "Properties": {
+                    "half": "lower"
+                }
             }
             },
             {
             "weight": 2,
             "data": {
-                "Name": "minecraft:large_fern"
+                "Name": "minecraft:large_fern",
+                "Properties": {
+                    "half": "lower"
+                }
             }
             }
         ]

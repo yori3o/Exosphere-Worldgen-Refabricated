@@ -328,7 +328,7 @@ public class BiomeModifiersBase {
         add(Biomes.PLAINS, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:flowers/basic_flowers");
         add(Biomes.PLAINS, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:clustered_overworld_mushrooms");
         add(Biomes.PLAINS, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:grass/basic_grass");
-        add(Biomes.PLAINS, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:grass/plains_grass");
+        add(Biomes.PLAINS, GenerationStep.Decoration.VEGETAL_DECORATION, "minecraft:patch_grass_plain");
         add(Biomes.PLAINS, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:dense_rooted_azalea_trees");
         add(Biomes.PLAINS, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:rooted_big_tall_birch_trees");
         add(Biomes.PLAINS, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:rooted_tilted_tall_birch_trees");
@@ -462,7 +462,7 @@ public class BiomeModifiersBase {
         add(Biomes.SUNFLOWER_PLAINS, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:clustered_overworld_mushrooms");
         add(Biomes.SUNFLOWER_PLAINS, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:clustered_nether_mushrooms");
         add(Biomes.SUNFLOWER_PLAINS, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:grass/basic_grass");
-        add(Biomes.SUNFLOWER_PLAINS, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:grass/plains_grass");
+        add(Biomes.SUNFLOWER_PLAINS, GenerationStep.Decoration.VEGETAL_DECORATION, "minecraft:patch_grass_plain");
         add(Biomes.SUNFLOWER_PLAINS, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:clustered_pumpkin");
         add(Biomes.SUNFLOWER_PLAINS, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:dense_rooted_azalea_trees");
         add(Biomes.SUNFLOWER_PLAINS, GenerationStep.Decoration.VEGETAL_DECORATION, "exosphere:rooted_big_tall_birch_trees");

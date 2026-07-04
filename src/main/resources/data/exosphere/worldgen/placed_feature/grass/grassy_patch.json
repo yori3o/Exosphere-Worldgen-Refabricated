@@ -3,7 +3,7 @@
   "placement": [
     {
       "type": "minecraft:count",
-      "count": 196
+      "count": 128
     },
     {
       "type": "minecraft:in_square"
@@ -18,33 +18,34 @@
       "y_spread": 3
     },
     {
-        "type": "minecraft:block_predicate_filter",
-        "predicate": {
-            "type": "minecraft:matching_blocks",
-            "offset": [
-                0,
-                -1,
-                0
-            ],
-            "blocks": [
-                "minecraft:snow_block",
-                "minecraft:grass_block",
-                "minecraft:dirt",
-                "minecraft:podzol",
-                "minecraft:coarse_dirt",
-                "minecraft:mycelium",
-                "minecraft:moss_block",
-                "minecraft:packed_mud",
-                "minecraft:mud",
-                "minecraft:red_sand"
-            ]
-        }
-    },
-    {
       "type": "minecraft:block_predicate_filter",
       "predicate": {
         "type": "minecraft:matching_block_tag",
         "tag": "minecraft:air"
+      }
+    },
+    {
+      "type": "minecraft:environment_scan",
+      "direction_of_search": "down",
+      "max_steps": 8,
+      "target_condition": {
+        "type": "minecraft:true"
+      },
+      "allowed_search_condition": {
+        "type": "minecraft:matching_blocks",
+        "offset": [
+          0,
+          -1,
+          0
+        ],
+        "blocks": [
+          "minecraft:grass_block",
+          "minecraft:dirt",
+          "minecraft:coarse_dirt",
+          "minecraft:rooted_dirt",
+          "minecraft:moss_block",
+          "minecraft:podzol"
+        ]
       }
     }
   ]

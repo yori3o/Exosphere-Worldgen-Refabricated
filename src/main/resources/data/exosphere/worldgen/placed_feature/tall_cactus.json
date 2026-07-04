@@ -9,8 +9,8 @@
       "type": "minecraft:count",
       "count": {
         "type": "minecraft:uniform",
-        "min_inclusive": 60,
-        "max_inclusive": 180
+        "min_inclusive": 8,
+        "max_inclusive": 64
       }
     },
     {
